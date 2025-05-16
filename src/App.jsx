@@ -2,21 +2,16 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import ProductCard from "./components/ProductCard";
+import Products from "./components/Products";
 
 const App = () => {
   return (
     <div>
       <Navbar />
       <Hero />
+      <Products />
 
-      <div className="product-grid">
-        {/* Just render one ProductCard for now as a test */}
-        <ProductCard
-          title="Sample Product"
-          price="99"
-          imageUrl="https://via.placeholder.com/150"
-        />
-      </div>
+      {/* Test ProductCard directly */}
     </div>
   );
 };
